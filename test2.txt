@@ -1,0 +1,416 @@
+// ****************
+cue killall
+ExlistDelays clear
+ParamEnvStop bang
+Matrix /Connect clear
+Granul /Content/DelayLength 5000, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 30, /Envelop/RampTime 100, /Grain/MinSize 50, /Grain/Rate 150, /Grain/RateJitter 50, /Grain/Size 600, /Grain/SizeJitter 100, /Pitch/Pitch 1., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 20, /Setup/Power 1, /Setup/Record 0, /Setup/Voices 15, /Bypass 0, /Gain 0., /InGain 0., /Off 1, /Wet 100.,
+Granul2 /Content/DelayLength 5000, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 30, /Envelop/RampTime 100, /Grain/MinSize 50, /Grain/Rate 150, /Grain/RateJitter 50, /Grain/Size 600, /Grain/SizeJitter 100, /Pitch/Pitch 1., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 20, /Setup/Power 1, /Setup/Record 0, /Setup/Voices 15, /Bypass 0, /Gain 0., /InGain 0., /Off 1, /Wet 100.,
+Granul3 /Content/DelayLength 5000, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 30, /Envelop/RampTime 100, /Grain/MinSize 50, /Grain/Rate 150, /Grain/RateJitter 50, /Grain/Size 600, /Grain/SizeJitter 100, /Pitch/Pitch 1., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 20, /Setup/Power 1, /Setup/Record 0, /Setup/Voices 15, /Bypass 0, /Gain 0., /InGain 0., /Off 1, /Wet 100.,
+Granul /Setup/Record 0, /Clear bang
+Granul2 /Setup/Record 0, /Clear bang
+Granul3 /Setup/Record 0, /Clear bang
+Delmulti /Clear bang
+Delmulti /Off 1
+Delmulti2 /Clear bang
+Delmulti2 /Off 1
+8chPlayer1 /Stop bang
+8chPlayer2 /Stop bang
+8chPlayer3 /Stop bang
+StPlayer /Stop bang
+
+// ****************
+cue mm1
+time 0
+Matrix /Shortlist 0 8 1 2 10 1 3 10 1 4 10 1 6 10 1 7 10 1 8 2 1 9 3 1,
+8chPlayer1 /Off 0, /Gain 0, /Play SineTone_High_Low.aif
+8chPlayer2 /Off 0, /Gain 0, /Play Grind_Beginning_1.aif
+Delmulti /Del1/FeedB 1., /Del1/Gain 0., /Del1/Time 9800, /Del2/FeedB 1., /Del2/Gain 0., /Del2/Time 9975, /Del3/FeedB 1., /Del3/Gain 0., /Del3/Time 9825, /Del4/FeedB 1., /Del4/Gain 0., /Del4/Time 9950, /Del5/FeedB 1., /Del5/Gain 0., /Del5/Time 9850, /Del6/FeedB 1., /Del6/Gain 0., /Del6/Time 9925, /Del7/FeedB 1., /Del7/Gain 0., /Del7/Time 9875, /Del8/FeedB 1., /Del8/Gain 0., /Del8/Time 9900, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 2 1 3 3 1 4 4 1 5 5 1, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+Granul /Clear bang
+Granul /Content/DelayLength 7036, /Content/Direction 2, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 30, /Envelop/RampTime 76, /Grain/MinSize 70, /Grain/Rate 638, /Grain/RateJitter 934, /Grain/Size 329, /Grain/SizeJitter 75, /Pitch/Pitch 2., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 1, /Bypass 0, /Gain 9., /InGain 9., /Off 0, /Wet 100.,
+Granul2 /Setup/Record 0, /Off 1
+Granul3 /Off 1
+
+// ****************
+cue mm11
+time 78000
+Matrix /Shortlist 0 8 1 2 10 1 3 10 1 4 10 1 5 9 1 6 10 1 7 10 1 8 2 1 9 3 1 10 4 1 10 6 1 11 5 1 11 7 1,
+Granul /Content/DelayLength 7036, /Content/Direction 2, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 30, /Envelop/RampTime 76, /Grain/MinSize 70, /Grain/Rate 638, /Grain/RateJitter 934, /Grain/Size 754, /Grain/SizeJitter 75, /Pitch/Pitch 4., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 1, /Bypass 0, /Gain 9., /InGain 9., /Off 0, /Wet 100.,
+Delmulti /Del1/FeedB 1., /Del1/Gain 0., /Del1/Time 9800, /Del2/FeedB 1., /Del2/Gain 0., /Del2/Time 9975, /Del3/FeedB 1., /Del3/Gain 0., /Del3/Time 9825, /Del4/FeedB 1., /Del4/Gain 0., /Del4/Time 9950, /Del5/FeedB 1., /Del5/Gain 0., /Del5/Time 9850, /Del6/FeedB 1., /Del6/Gain 0., /Del6/Time 9925, /Del7/FeedB 1., /Del7/Gain 0., /Del7/Time 9875, /Del8/FeedB 1., /Del8/Gain 0., /Del8/Time 9900, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 2 1 3 3 1 4 4 1 5 5 1, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+Granul2 /Clear bang
+Granul3 /Off 1
+// GranularSustain
+Granul2 /Content/DelayLength 6339, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 26, /Envelop/RampTime 182, /Grain/MinSize 70, /Grain/Rate 12, /Grain/RateJitter 76, /Grain/Size 425, /Grain/SizeJitter 47, /Pitch/Pitch 1., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 23, /Bypass 0, /Gain -40., /InGain 0., /Off 0, /Wet 100.,
+1 Granul2 /Gain 0 4000
+4000 Granul2 /Setup/Record 0
+4001 Granul2 /Gain env -30 28000 -80 5000
+38000 Granul2 /Clear bang
+
+// ****************
+cue mm24
+time 128000
+Matrix /Shortlist 0 0 0
+Granul /Setup/Record 0, /Clear bang, /Off 1
+Granul2 /Setup/Record 0, /Off 1
+Granul3 /Setup/Record 0, /Off 1
+Delmulti /Gain -80 500
+501 Delmulti /Off 1
+
+// ****************
+cue mm26
+time 136000
+Matrix /Shortlist 0 8 1 2 11 1 3 11 1 4 11 1 6 11 1 7 11 1 8 2 1 8 4 1 9 3 1 9 5 1,
+Delmulti /Off 1
+Delmulti2 /Del1/FeedB 1., /Del1/Gain 0., /Del1/Time 9900, /Del2/FeedB 1., /Del2/Gain 0., /Del2/Time 9825, /Del3/FeedB 1., /Del3/Gain 0., /Del3/Time 9950, /Del4/FeedB 1., /Del4/Gain 0., /Del4/Time 9850, /Del5/FeedB 1., /Del5/Gain 0., /Del5/Time 9925, /Del6/FeedB 1., /Del6/Gain 0., /Del6/Time 9800, /Del7/FeedB 1., /Del7/Gain 0., /Del7/Time 9975, /Del8/FeedB 1., /Del8/Gain 0., /Del8/Time 10000, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 2 1 3 3 1 4 4 1 5 5 1, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+// Granulate Bowl
+Granul /Content/DelayLength 6000, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 26, /Envelop/RampTime 182, /Grain/MinSize 70, /Grain/Rate 12, /Grain/RateJitter 76, /Grain/Size 425, /Grain/SizeJitter 47, /Pitch/Pitch 1., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 23, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+Granul2 /Setup/Record 0, /Off 1
+Granul3 /Setup/Record 0, /Off 1
+
+// ****************
+cue mm32
+time 153000
+Matrix /Shortlist 0 8 1 2 11 1 3 11 1 4 11 1 5 9 1 6 11 1 7 11 1 8 2 1 8 4 1 9 3 1 9 5 1 10 4 1 10 6 1 11 5 1 11 7 1,
+Delmulti /Off 1
+Delmulti2 /Del1/FeedB 1., /Del1/Gain 0., /Del1/Time 9900, /Del2/FeedB 1., /Del2/Gain 0., /Del2/Time 9825, /Del3/FeedB 1., /Del3/Gain 0., /Del3/Time 9950, /Del4/FeedB 1., /Del4/Gain 0., /Del4/Time 9850, /Del5/FeedB 1., /Del5/Gain 0., /Del5/Time 9925, /Del6/FeedB 1., /Del6/Gain 0., /Del6/Time 9800, /Del7/FeedB 1., /Del7/Gain 0., /Del7/Time 9975, /Del8/FeedB 1., /Del8/Gain 0., /Del8/Time 10000, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 2 1 3 3 1 4 4 1 5 5 1, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+// Granulate Bowl
+Granul /Content/DelayLength 6000, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 26, /Envelop/RampTime 182, /Grain/MinSize 70, /Grain/Rate 12, /Grain/RateJitter 76, /Grain/Size 425, /Grain/SizeJitter 47, /Pitch/Pitch 1., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 23, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+Granul3 /Off 1
+// GranularSustain
+Granul2 /Content/DelayLength 6339, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 26, /Envelop/RampTime 182, /Grain/MinSize 70, /Grain/Rate 12, /Grain/RateJitter 76, /Grain/Size 425, /Grain/SizeJitter 47, /Pitch/Pitch 1., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 23, /Bypass 0, /Gain -40., /InGain 0., /Off 0, /Wet 100.,
+1 Granul2 /Gain 0 4000
+4000 Granul2 /Setup/Record 0
+4001 Granul2 /Gain env -20 38000 -60 5000 -80 3000
+50100 Granul2 /Clear bang
+
+// ****************
+cue mm37
+time 168000
+Matrix /Shortlist 0 8 1 2 11 1 3 11 1 4 11 1 5 12 1 6 11 1 7 11 1 8 2 1 8 4 1 9 3 1 9 5 1 10 4 1 10 6 1 11 5 1 11 7 1 12 2 1 12 4 1 13 3 1 13 5 1,
+Delmulti /Off 1
+Delmulti2 /Del1/FeedB 1., /Del1/Gain 0., /Del1/Time 9900, /Del2/FeedB 1., /Del2/Gain 0., /Del2/Time 9825, /Del3/FeedB 1., /Del3/Gain 0., /Del3/Time 9950, /Del4/FeedB 1., /Del4/Gain 0., /Del4/Time 9850, /Del5/FeedB 1., /Del5/Gain 0., /Del5/Time 9925, /Del6/FeedB 1., /Del6/Gain 0., /Del6/Time 9800, /Del7/FeedB 1., /Del7/Gain 0., /Del7/Time 9975, /Del8/FeedB 1., /Del8/Gain 0., /Del8/Time 10000, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 2 1 3 3 1 4 4 1 5 5 1, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+// Granulate Bowl
+Granul /Content/DelayLength 6000, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 26, /Envelop/RampTime 182, /Grain/MinSize 70, /Grain/Rate 12, /Grain/RateJitter 76, /Grain/Size 425, /Grain/SizeJitter 47, /Pitch/Pitch 1., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 23, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+// GranularSustain
+Granul3 /Content/DelayLength 6339, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 26, /Envelop/RampTime 182, /Grain/MinSize 70, /Grain/Rate 12, /Grain/RateJitter 76, /Grain/Size 425, /Grain/SizeJitter 47, /Pitch/Pitch 1., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 23, /Bypass 0, /Gain -40., /InGain 0., /Off 0, /Wet 100.,
+1 Granul3 /Gain 0 4000
+4000 Granul3 /Setup/Record 0
+4001 Granul3 /Gain env -20 23000 -80 2000
+29100 Granul3 /Clear bang
+
+// ****************
+cue mm49
+time 204000
+Matrix /Shortlist 10 4 1 10 6 1 11 5 1 11 7 1 12 2 1 12 4 1 13 3 1 13 5 1,
+Delmulti /Clear bang
+1 Delmulti /Off 1
+Delmulti2 /Clear bang
+1 Delmulti2 /Off 1
+Granul3 /Setup/Record 0, /Off 1
+
+// ****************
+cue mm50
+time 206000
+8chPlayer3 /Off 0, /Gain 0, /Play SineTone_Mid.aif
+Matrix /Shortlist 0 8 1 2 11 1 3 11 1 4 11 1 6 11 1 7 11 1 8 2 1 8 4 1 9 3 1 9 5 1,
+Delmulti /Off 1
+Delmulti2 /Del1/FeedB 0., /Del1/Gain 0., /Del1/Time 15000, /Del2/FeedB 0., /Del2/Gain 0., /Del2/Time 15000, /Del3/FeedB 23., /Del3/Gain 0., /Del3/Time 12000, /Del4/FeedB 15., /Del4/Gain 0., /Del4/Time 12000, /Del5/FeedB 11., /Del5/Gain 0., /Del5/Time 9000, /Del6/FeedB 19., /Del6/Gain 0., /Del6/Time 9000, /Del7/FeedB 19., /Del7/Gain 0., /Del7/Time 15000, /Del8/FeedB 20., /Del8/Gain 0., /Del8/Time 15000, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 4 1 3 5 1 4 6 1 5 7 1 6 2 1 7 3 1, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+// Granulate Gong
+Granul /Content/DelayLength 8002, /Content/Direction 2, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 26, /Envelop/RampTime 306, /Grain/MinSize 70, /Grain/Rate 149, /Grain/RateJitter 102, /Grain/Size 2000, /Grain/SizeJitter 299, /Pitch/Pitch 1.25, /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 22, /Bypass 0, /Gain 3., /InGain 0., /Off 0, /Wet 100.,
+Granul2 /Setup/Record 0, /Off 1
+Granul3 /Setup/Record 0, /Off 1
+
+// ****************
+cue mm54
+time 219000
+Matrix /Shortlist 0 8 1 2 11 1 3 11 1 4 11 1 5 9 1 6 11 1 7 11 1 8 2 1 8 4 1 9 3 1 9 5 1 10 4 1 11 5 1,
+Delmulti /Off 1
+Delmulti2 /Del1/FeedB 0., /Del1/Gain 0., /Del1/Time 15000, /Del2/FeedB 0., /Del2/Gain 0., /Del2/Time 15000, /Del3/FeedB 23., /Del3/Gain 0., /Del3/Time 12000, /Del4/FeedB 15., /Del4/Gain 0., /Del4/Time 12000, /Del5/FeedB 11., /Del5/Gain 0., /Del5/Time 9000, /Del6/FeedB 19., /Del6/Gain 0., /Del6/Time 9000, /Del7/FeedB 19., /Del7/Gain 0., /Del7/Time 15000, /Del8/FeedB 20., /Del8/Gain 0., /Del8/Time 15000, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 4 1 3 5 1 4 6 1 5 7 1 6 2 1 7 3 1, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+// Granulate Gong
+Granul /Content/DelayLength 8002, /Content/Direction 2, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 26, /Envelop/RampTime 306, /Grain/MinSize 70, /Grain/Rate 149, /Grain/RateJitter 102, /Grain/Size 2000, /Grain/SizeJitter 299, /Pitch/Pitch 1.25, /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 22, /Bypass 0, /Gain 3., /InGain 0., /Off 0, /Wet 100.,
+Granul3 /Off 1
+// GranularSustain
+Granul2 /Content/DelayLength 6339, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 26, /Envelop/RampTime 182, /Grain/MinSize 70, /Grain/Rate 12, /Grain/RateJitter 76, /Grain/Size 425, /Grain/SizeJitter 47, /Pitch/Pitch 1., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 23, /Bypass 0, /Gain -40., /InGain 0., /Off 0, /Wet 100.,
+1 Granul2 /Gain 0 4000
+4000 Granul2 /Setup/Record 0
+4001 Granul2 /Gain env -25 18000 -80 4000
+4001 Granul2 /Pitch/Pitch 1.059 20000
+26100 Granul2 /Clear bang
+
+// ****************
+cue mm60
+time 237000
+Matrix /Shortlist 0 8 1 2 11 1 3 11 1 4 11 1 5 12 1 6 11 1 7 11 1 8 2 1 8 4 1 9 3 1 9 5 1 10 4 1 11 5 1 12 6 1 13 7 1,
+Delmulti /Off 1
+Delmulti2 /Del1/FeedB 0., /Del1/Gain 0., /Del1/Time 15000, /Del2/FeedB 0., /Del2/Gain 0., /Del2/Time 15000, /Del3/FeedB 23., /Del3/Gain 0., /Del3/Time 12000, /Del4/FeedB 15., /Del4/Gain 0., /Del4/Time 12000, /Del5/FeedB 11., /Del5/Gain 0., /Del5/Time 9000, /Del6/FeedB 19., /Del6/Gain 0., /Del6/Time 9000, /Del7/FeedB 19., /Del7/Gain 0., /Del7/Time 15000, /Del8/FeedB 20., /Del8/Gain 0., /Del8/Time 15000, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 4 1 3 5 1 4 6 1 5 7 1 6 2 1 7 3 1, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+// Granulate Gong
+Granul /Content/DelayLength 8002, /Content/Direction 2, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 26, /Envelop/RampTime 306, /Grain/MinSize 70, /Grain/Rate 149, /Grain/RateJitter 102, /Grain/Size 2000, /Grain/SizeJitter 299, /Pitch/Pitch 1.25, /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 22, /Bypass 0, /Gain 3., /InGain 0., /Off 0, /Wet 100.,
+Granul3 /Off 1
+// GranularSustain
+Granul3 /Content/DelayLength 6339, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 26, /Envelop/RampTime 182, /Grain/MinSize 70, /Grain/Rate 12, /Grain/RateJitter 76, /Grain/Size 425, /Grain/SizeJitter 47, /Pitch/Pitch 1., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 23, /Bypass 0, /Gain -40., /InGain 0., /Off 0, /Wet 100.,
+1 Granul3 /Gain 0 4000
+4000 Granul3 /Setup/Record 0
+4001 Granul3 /Gain env -25 36000 -80 4000
+4001 Granul3 /Pitch/Pitch 1.059 20000
+26100 Granul3 /Clear bang
+
+// ****************
+cue mm73
+time 275000
+Matrix /Shortlist 0 8 1 2 11 1 3 11 1 4 11 1 5 9 1 6 11 1 7 11 1 8 2 1 8 4 1 9 3 1 9 5 1 10 4 1 11 5 1,
+Delmulti /Off 1
+Delmulti2 /Del3/FeedB 80 12000, /Del4/FeedB 80 12000, /Del5/FeedB 80 12000, /Del6/FeedB 80 12000, /Del7/FeedB 80 12000, /Del8/FeedB 80 12000
+// Granulate Gong
+Granul /Content/DelayLength 8002, /Content/Direction 2, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 26, /Envelop/RampTime 306, /Grain/MinSize 70, /Grain/Rate 149, /Grain/RateJitter 102, /Grain/Size 2000, /Grain/SizeJitter 299, /Pitch/Pitch 1.25, /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 22, /Bypass 0, /Gain 3., /InGain 0., /Off 0, /Wet 100.,
+Granul3 /Off 1
+// GranularSustain
+Granul2 /Content/DelayLength 6339, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 26, /Envelop/RampTime 182, /Grain/MinSize 70, /Grain/Rate 12, /Grain/RateJitter 76, /Grain/Size 425, /Grain/SizeJitter 47, /Pitch/Pitch 1., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 23, /Bypass 0, /Gain -40., /InGain 0., /Off 0, /Wet 100.,
+1 Granul2 /Gain 0 4000
+4000 Granul2 /Setup/Record 0
+4001 Granul2 /Gain env -20 38000 -60 5000 -80 3000
+4001 Granul2 /Pitch/Pitch 1.059 40000
+50100 Granul2 /Clear bang
+
+// ****************
+cue mm78
+time 291000
+Matrix /Shortlist 0 8 1 2 11 1 3 11 1 4 11 1 5 12 1 6 11 1 7 11 1 8 2 1 8 4 1 9 3 1 9 5 1 10 4 1 11 5 1 12 6 1 13 7 1,
+Delmulti /Off 1
+Delmulti2 /InGain env -60 6000 -80 2000
+Granul /Content/DelayLength 7036, /Content/Direction 2, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 93, /Envelop/RampTime 5, /Grain/MinSize 70, /Grain/Rate 638, /Grain/RateJitter 934, /Grain/Size 329, /Grain/SizeJitter 75, /Pitch/Pitch 2., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 1, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+// GranularSustain
+Granul3 /Content/DelayLength 6339, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 26, /Envelop/RampTime 182, /Grain/MinSize 70, /Grain/Rate 12, /Grain/RateJitter 76, /Grain/Size 425, /Grain/SizeJitter 47, /Pitch/Pitch 1., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 23, /Bypass 0, /Gain -40., /InGain 0., /Off 0, /Wet 100.,
+1 Granul3 /Gain 0 4000
+4000 Granul3 /Setup/Record 0
+4001 Granul3 /Gain env -20 23000 -80 2000
+4001 Granul3 /Pitch/Pitch 1.059 23000
+29100 Granul3 /Clear bang
+
+// ****************
+cue mm83
+time 316000
+Matrix /Shortlist 10 4 1 11 5 1 12 6 1 13 7 1,
+Delmulti /Off 1
+Granul /Setup/Record 0
+
+// ****************
+cue mm89
+time 332000
+Matrix /Shortlist 0 8 1 2 10 1 3 10 1 4 10 1 6 10 1 7 10 1 8 4 1 8 6 1 9 5 1 9 7 1,
+Delmulti /Del1/FeedB 20., /Del1/Gain 0., /Del1/Time 882, /Del2/FeedB 20., /Del2/Gain 0., /Del2/Time 110, /Del3/FeedB 20., /Del3/Gain 0., /Del3/Time 771, /Del4/FeedB 20., /Del4/Gain 0., /Del4/Time 220, /Del5/FeedB 20., /Del5/Gain 0., /Del5/Time 661, /Del6/FeedB 20., /Del6/Gain 0., /Del6/Time 330, /Del7/FeedB 20., /Del7/Gain 0., /Del7/Time 551, /Del8/FeedB 20., /Del8/Gain 0., /Del8/Time 441, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 2 1 3 3 1 4 4 1 5 5 1, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+Granul /Clear bang
+Granul /Content/DelayLength 8002, /Content/Direction 2, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 26, /Envelop/RampTime 306, /Grain/MinSize 70, /Grain/Rate 149, /Grain/RateJitter 102, /Grain/Size 2000, /Grain/SizeJitter 299, /Pitch/Pitch 1.25, /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 22, /Bypass 0, /Gain 3., /InGain 0., /Off 0, /Wet 100.,
+Granul2 /Setup/Record 0, /Clear bang, /Off 1
+Granul3 /Setup/Record 0, /Clear bang, /Off 1
+
+// ****************
+cue mm95.3
+time 350000
+Matrix /Shortlist 0 8 1 2 10 1 3 10 1 4 10 1 5 9 1 6 10 1 7 10 1 8 4 1 8 6 1 9 5 1 9 7 1 10 4 1 10 6 1 11 5 1 11 7 1,
+Delmulti /Del1/FeedB 20., /Del1/Gain 0., /Del1/Time 882, /Del2/FeedB 20., /Del2/Gain 0., /Del2/Time 110, /Del3/FeedB 20., /Del3/Gain 0., /Del3/Time 771, /Del4/FeedB 20., /Del4/Gain 0., /Del4/Time 220, /Del5/FeedB 20., /Del5/Gain 0., /Del5/Time 661, /Del6/FeedB 20., /Del6/Gain 0., /Del6/Time 330, /Del7/FeedB 20., /Del7/Gain 0., /Del7/Time 551, /Del8/FeedB 20., /Del8/Gain 0., /Del8/Time 441, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 2 1 3 3 1 4 4 1 5 5 1, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+Granul /Content/DelayLength 8002, /Content/Direction 2, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 26, /Envelop/RampTime 306, /Grain/MinSize 70, /Grain/Rate 149, /Grain/RateJitter 102, /Grain/Size 2000, /Grain/SizeJitter 299, /Pitch/Pitch 1.25, /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 22, /Bypass 0, /Gain 3., /InGain 0., /Off 0, /Wet 100.,
+Granul3 /Setup/Record 0, /Clear bang, /Off 1
+// GranularSustain
+Granul2 /Content/DelayLength 6339, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 26, /Envelop/RampTime 182, /Grain/MinSize 70, /Grain/Rate 12, /Grain/RateJitter 76, /Grain/Size 425, /Grain/SizeJitter 47, /Pitch/Pitch 1., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 23, /Bypass 0, /Gain -40., /InGain 0., /Off 0, /Wet 100.,
+1 Granul2 /Gain 0 4000
+4000 Granul2 /Setup/Record 0
+4001 Granul2 /Pitch/Pitch 1.189 65000
+4001 Granul2 /Setup/Voices 4 65000
+4001 Granul2 /Grain/Rate 53 65000
+4001 Granul2 /Grain/RateJitter 12 65000
+4001 Granul2 /Grain/Size 96 65000
+4001 Granul2 /Envelop/RampTime 50 53 65000
+4001 Granul2 /Gain 5 65000
+
+// ****************
+cue mm102
+time 366000
+Matrix /Shortlist 2 10 1 3 10 1 4 10 1 6 10 1 7 10 1 10 4 1 10 6 1 11 5 1 11 7 1,
+Delmulti /Del1/FeedB 20., /Del1/Gain 0., /Del1/Time 882, /Del2/FeedB 20., /Del2/Gain 0., /Del2/Time 110, /Del3/FeedB 20., /Del3/Gain 0., /Del3/Time 771, /Del4/FeedB 20., /Del4/Gain 0., /Del4/Time 220, /Del5/FeedB 20., /Del5/Gain 0., /Del5/Time 661, /Del6/FeedB 20., /Del6/Gain 0., /Del6/Time 330, /Del7/FeedB 20., /Del7/Gain 0., /Del7/Time 551, /Del8/FeedB 20., /Del8/Gain 0., /Del8/Time 441, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 2 1 3 3 1 4 4 1 5 5 1, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+Granul /Setup/Record 0, /Clear bang, /Off 1
+Granul3 /Setup/Record 0, /Clear bang, /Off 1
+
+// ****************
+cue mm122
+time 419000
+Matrix /Shortlist 0 0 0
+Delmulti /Gain -80
+Delmulti2 /Gain -80
+Granul /Setup/Record 0, /Clear bbang, /Off 1
+Granul2 /Gain -80
+Granul3 /Setup/Record 0, /Clear bang, /Off 1
+100 Delmulti /Clear bang
+100 Delmulti2 /Clear clear
+100 Granul2 /Clear bang
+150 Delmulti /Off 1
+150 Delmulti2 /Off 1
+150 Granul2 /Off 1
+
+// ****************
+cue mm123
+time 423000
+Matrix /Shortlist 1 10 1 2 10 1 3 10 1 4 10 1 6 10 1 7 10 1,
+Delmulti /Del1/FeedB 20., /Del1/Gain 0., /Del1/Time 27, /Del2/FeedB 20., /Del2/Gain 0., /Del2/Time 27, /Del3/FeedB 20., /Del3/Gain 0., /Del3/Time 55, /Del4/FeedB 20., /Del4/Gain 0., /Del4/Time 55, /Del5/FeedB 20., /Del5/Gain -3., /Del5/Time 110, /Del6/FeedB 20., /Del6/Gain -3., /Del6/Time 110, /Del7/FeedB 20., /Del7/Gain -8., /Del7/Time 220, /Del8/FeedB 20., /Del8/Gain -8., /Del8/Time 220, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 2 1 3 3 1 4 4 1 5 5 1, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+Delmulti2 /Off 1
+Granul /Setup/Record 0, /Off 1
+Granul2 /Setup/Record 0, /Off 1
+Granul3 /Setup/Record 0, /Off 1
+
+// ****************
+cue mm133
+time 437000
+Matrix /Shortlist 1 10 1 2 10 1 3 10 1 4 10 1 5 9 1 6 10 1 7 10 1 10 2 1 10 4 1 11 3 1 11 5 1,
+Delmulti /Del1/FeedB 20., /Del1/Gain 0., /Del1/Time 27, /Del2/FeedB 20., /Del2/Gain 0., /Del2/Time 27, /Del3/FeedB 20., /Del3/Gain 0., /Del3/Time 55, /Del4/FeedB 20., /Del4/Gain 0., /Del4/Time 55, /Del5/FeedB 20., /Del5/Gain -3., /Del5/Time 110, /Del6/FeedB 20., /Del6/Gain -3., /Del6/Time 110, /Del7/FeedB 20., /Del7/Gain -8., /Del7/Time 220, /Del8/FeedB 20., /Del8/Gain -8., /Del8/Time 220, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 2 1 3 3 1 4 4 1 5 5 1, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+Delmulti2 /Off 1
+Granul /Setup/Record 0, /Off 1
+Granul3 /Setup/Record 0, /Off 1
+// GranularSustain
+Granul2 /Content/DelayLength 2000, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 26, /Envelop/RampTime 182, /Grain/MinSize 70, /Grain/Rate 12, /Grain/RateJitter 76, /Grain/Size 425, /Grain/SizeJitter 47, /Pitch/Pitch 1., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 23, /Bypass 0, /Gain -40., /InGain 0., /Off 0, /Wet 100.,
+1 Granul2 /Gain 0 2000
+2000 Granul2 /Setup/Record 0
+2001 Granul2 /Gain env -35 10000 -80 2000
+14100 Granul2 /Clear bang
+
+// ****************
+cue mm144
+time 454000
+Matrix /Shortlist 1 10 1 2 10 1 3 10 1 4 10 1 5 12 1 6 10 1 7 10 1 10 2 1 10 4 1 11 3 1 11 5 1 12 2 1 12 4 1 13 3 1 13 5 1,
+Delmulti /Del1/FeedB 20., /Del1/Gain 0., /Del1/Time 27, /Del2/FeedB 20., /Del2/Gain 0., /Del2/Time 27, /Del3/FeedB 20., /Del3/Gain 0., /Del3/Time 55, /Del4/FeedB 20., /Del4/Gain 0., /Del4/Time 55, /Del5/FeedB 20., /Del5/Gain -3., /Del5/Time 110, /Del6/FeedB 20., /Del6/Gain -3., /Del6/Time 110, /Del7/FeedB 20., /Del7/Gain -8., /Del7/Time 220, /Del8/FeedB 20., /Del8/Gain -8., /Del8/Time 220, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 2 1 3 3 1 4 4 1 5 5 1, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+Delmulti2 /Off 1
+Granul /Setup/Record 0, /Off 1
+Granul2 /Setup/Record 0, /Off 1
+// GranularSustain
+Granul3 /Content/DelayLength 2000, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 26, /Envelop/RampTime 182, /Grain/MinSize 70, /Grain/Rate 12, /Grain/RateJitter 76, /Grain/Size 425, /Grain/SizeJitter 47, /Pitch/Pitch 1.059, /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 23, /Bypass 0, /Gain -40., /InGain 0., /Off 0, /Wet 100.,
+1 Granul3 /Gain 0 2000
+2000 Granul3 /Setup/Record 0
+2001 Granul3 /Gain env -35 10000 -80 2000
+14100 Granul3 /Clear bang
+
+// ****************
+cue mm149
+time 462000
+Matrix /Shortlist 12 2 1 12 4 1 13 3 1 13 5 1,
+Delmulti2 /Off 1
+Granul /Setup/Record 0, /Off 1
+Granul2 /Setup/Record 0, /Off 1
+Delmulti /Gain -80 200
+250 Delmulti /Clear clear, /Off 1
+
+// ****************
+cue mm153
+time 510000
+8chPlayer2 /Off 0, /Gain 0, /Play SineTone_SOLO.aif
+Matrix /Shortlist 0 11 1 1 11 1 2 11 1 3 11 1 4 11 1 6 11 1 7 11 1
+Delmulti /Off 1
+Delmulti2 /Del1/FeedB 0., /Del1/Gain 0., /Del1/Time 5347, /Del2/FeedB 0., /Del2/Gain 0., /Del2/Time 5245, /Del3/FeedB 0., /Del3/Gain 0., /Del3/Time 5304, /Del4/FeedB 0., /Del4/Gain 0., /Del4/Time 5277, /Del5/FeedB 0., /Del5/Gain 0., /Del5/Time 10598, /Del6/FeedB 0., /Del6/Gain 0., /Del6/Time 10568, /Del7/FeedB 0., /Del7/Gain 0., /Del7/Time 5306, /Del8/FeedB 0., /Del8/Gain 0., /Del8/Time 5283, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 5 1 3 4 1 4 6 1 5 7 1 6 3 1 7 2 1, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+Granul /Setup/Record 0, /Off 1
+Granul2 /Setup/Record 0, /Off 1
+Granul3 /Setup/Record 0, /Off 1
+
+// ****************
+// ****************
+cue mm225
+time 789000
+Matrix /Shortlist 0 11 1 1 11 1 2 11 1 3 11 1 4 11 1 6 11 1 7 11 1
+Delmulti /Off 1
+Delmulti2 /InGain -90 1000
+Delmulti2 /Del1/FeedB 98. 1000, /Del2/FeedB 98. 1000, /Del3/FeedB 98. 1000, /Del4/FeedB 98. 1000, /Del5/FeedB 98. 1000, /Del6/FeedB 98. 1000, /Del7/FeedB 90. 1000, /Del8/FeedB 90. 1000
+Granul /Setup/Record 0, /Off 1
+Granul2 /Setup/Record 0, /Off 1
+Granul3 /Setup/Record 0, /Off 1
+
+// ****************
+cue mm226
+time 793000
+StPlayer /Off 0, /Play GuitarDrone
+Matrix /Shortlist 0 10 1 1 10 1 2 10 1 3 10 1 4 10 1 6 10 1 7 10 1,
+Delmulti /Del1/FeedB 20., /Del1/Gain 0., /Del1/Time 27, /Del2/FeedB 20., /Del2/Gain 0., /Del2/Time 27, /Del3/FeedB 20., /Del3/Gain 0., /Del3/Time 55, /Del4/FeedB 20., /Del4/Gain 0., /Del4/Time 55, /Del5/FeedB 20., /Del5/Gain -3., /Del5/Time 110, /Del6/FeedB 20., /Del6/Gain -3., /Del6/Time 110, /Del7/FeedB 20., /Del7/Gain -8., /Del7/Time 220, /Del8/FeedB 20., /Del8/Gain -8., /Del8/Time 220, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 2 1 3 3 1 4 4 1 5 5 1, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+Granul /Setup/Record 0, /Off 1
+Granul2 /Setup/Record 0, /Off 1
+Granul3 /Setup/Record 0, /Off 1
+
+// ****************
+cue mm251
+time 831000
+Matrix /Shortlist 0 0 0,
+Delmulti /Gain -80 100
+150 Delmulti /Clear clear
+200 Delmulti /Off 1
+Delmulti2 /Gain -80 100
+150 Delmulti2 /Clear clear
+200 Delmulti2 /Off 1
+Granul /Setup/Record 0, /Off 1
+Granul2 /Setup/Record 0, /Off 1
+Granul3 /Setup/Record 0, /Off 1
+
+// ****************
+cue mm278
+time 910000
+Matrix /Shortlist 1 10 1 2 10 1 3 10 1 4 10 1 5 10 1 6 10 1 7 10 1,
+Delmulti /Del1/FeedB 0., /Del1/Gain 0., /Del1/Time 60, /Del2/FeedB 0., /Del2/Gain 0., /Del2/Time 340, /Del3/FeedB 0., /Del3/Gain 0., /Del3/Time 100, /Del4/FeedB 0., /Del4/Gain 0., /Del4/Time 300, /Del5/FeedB 0., /Del5/Gain 0., /Del5/Time 140, /Del6/FeedB 0., /Del6/Gain 0., /Del6/Time 260, /Del7/FeedB 20., /Del7/Gain 0., /Del7/Time 180, /Del8/FeedB 20., /Del8/Gain 0., /Del8/Time 220, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 2 1 3 3 1 4 4 1 5 5 1, /Bypass 0, /Gain 0., /InGain -80., /Off 0, /Wet 100.,
+100 Delmulti /InGain 0.1
+Delmulti2 /Off 1
+Granul /Setup/Record 0, /Off 1
+Granul2 /Setup/Record 0, /Off 1
+Granul3 /Setup/Record 0, /Off 1
+
+// ****************
+cue mm309
+time 1008000
+Matrix /Shortlist 1 10 1 2 10 1 3 10 1 4 10 1 5 10 1 6 10 1 7 10 1 0 8 1 2 11 1 3 11 1 4 11 1 5 11 1 6 11 1 7 11 1 8 2 1 8 5 1 8 6 1 9 3 1 9 4 1 9 7 1,
+Delmulti /Del1/FeedB 0., /Del1/Gain 0., /Del1/Time 60, /Del2/FeedB 0., /Del2/Gain 0., /Del2/Time 340, /Del3/FeedB 0., /Del3/Gain 0., /Del3/Time 100, /Del4/FeedB 0., /Del4/Gain 0., /Del4/Time 300, /Del5/FeedB 0., /Del5/Gain 0., /Del5/Time 140, /Del6/FeedB 0., /Del6/Gain 0., /Del6/Time 260, /Del7/FeedB 20., /Del7/Gain 0., /Del7/Time 180, /Del8/FeedB 20., /Del8/Gain 0., /Del8/Time 220, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 2 1 3 3 1 4 4 1 5 5 1, /Bypass 0, /Gain 0., /InGain -80., /Off 0, /Wet 100.,
+Delmulti2 /Del1/FeedB 1., /Del1/Gain 0., /Del1/Time 9800, /Del2/FeedB 1., /Del2/Gain 0., /Del2/Time 9975, /Del3/FeedB 1., /Del3/Gain 0., /Del3/Time 9825, /Del4/FeedB 1., /Del4/Gain 0., /Del4/Time 9950, /Del5/FeedB 1., /Del5/Gain 0., /Del5/Time 9850, /Del6/FeedB 1., /Del6/Gain 0., /Del6/Time 9925, /Del7/FeedB 1., /Del7/Gain 0., /Del7/Time 9875, /Del8/FeedB 1., /Del8/Gain 0., /Del8/Time 9900, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 2 1 3 3 1 4 4 1 5 5 1, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+Granul /Content/DelayLength 8002, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 30, /Envelop/RampTime 336, /Grain/MinSize 70, /Grain/Rate 145, /Grain/RateJitter 72, /Grain/Size 1771, /Grain/SizeJitter 323, /Pitch/Pitch 0.5, /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 40, /Bypass 0, /Gain 9., /InGain 0., /Off 0, /Wet 100.,
+Granul2 /Setup/Record 0, /Off 1
+Granul3 /Setup/Record 0, /Off 1
+
+// ****************
+cue mm325
+time 1066000
+Matrix /Shortlist 0 8 1 1 10 1 2 10 1 2 11 1 3 10 1 3 11 1 4 10 1 4 11 1 5 10 1 5 11 1 6 10 1 6 11 1 7 10 1 7 11 1 8 2 1 8 5 1 8 6 1 9 3 1 9 4 1 9 7 1,
+Delmulti /Del1/FeedB 1., /Del1/Gain 0., /Del1/Time 9800, /Del2/FeedB 1., /Del2/Gain 0., /Del2/Time 9975, /Del3/FeedB 1., /Del3/Gain 0., /Del3/Time 9825, /Del4/FeedB 1., /Del4/Gain 0., /Del4/Time 9950, /Del5/FeedB 1., /Del5/Gain 0., /Del5/Time 9850, /Del6/FeedB 1., /Del6/Gain 0., /Del6/Time 9925, /Del7/FeedB 1., /Del7/Gain 0., /Del7/Time 9875, /Del8/FeedB 1., /Del8/Gain 0., /Del8/Time 9900, /Dir/Gain -100., /FbMtxAll 0 0 1 1 1 1 2 2 1 3 3 1 4 4 1 5 5 1, /Bypass 0, /Gain 0., /InGain 0., /Off 0, /Wet 100.,
+Delmulti2 /Off 1
+Granul /Content/DelayLength 8002, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 30, /Envelop/RampTime 336, /Grain/MinSize 70, /Grain/Rate 145, /Grain/RateJitter 72, /Grain/Size 1771, /Grain/SizeJitter 323, /Pitch/Pitch 0.5, /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 68, /Setup/Power 1, /Setup/Record 1, /Setup/Voices 40, /Bypass 0, /Gain 9., /InGain 0., /Off 0, /Wet 100.,
+Granul2 /Setup/Record 0, /Off 1
+Granul3 /Setup/Record 0, /Off 1
+
+// ****************
+cue mm345
+//time 1066000
+Matrix /Connect clear
+Delmulti /Off 1
+Delmulti2 /Off 1
+Granul /Setup/Record 0, /Off 1
+Granul2 /Setup/Record 0, /Off 1
+Granul3 /Setup/Record 0, /Off 1
+//8chPlayer1 /Gain -25 40000 -60 18000 -80 2000
+//8chPlayer2 /Gain -25 40000 -60 18000 -80 2000
+//8chPlayer3 /Gain -25 40000 -60 18000 -80 2000
+
+// ****************
+cue killall
+ExlistDelays clear
+ParamEnvStop bang
+Matrix /Connect clear
+Granul /Content/DelayLength 5000, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 30, /Envelop/RampTime 100, /Grain/MinSize 50, /Grain/Rate 150, /Grain/RateJitter 50, /Grain/Size 600, /Grain/SizeJitter 100, /Pitch/Pitch 1., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 20, /Setup/Power 1, /Setup/Record 0, /Setup/Voices 15, /Bypass 0, /Gain 0., /InGain 0., /Off 1, /Wet 100.,
+Granul2 /Content/DelayLength 5000, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 30, /Envelop/RampTime 100, /Grain/MinSize 50, /Grain/Rate 150, /Grain/RateJitter 50, /Grain/Size 600, /Grain/SizeJitter 100, /Pitch/Pitch 1., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 20, /Setup/Power 1, /Setup/Record 0, /Setup/Voices 15, /Bypass 0, /Gain 0., /InGain 0., /Off 1, /Wet 100.,
+Granul3 /Content/DelayLength 5000, /Content/Direction 0, /Content/Position -1., /Envelop/GrainGain 100., /Envelop/GrainGainJitter 30, /Envelop/RampTime 100, /Grain/MinSize 50, /Grain/Rate 150, /Grain/RateJitter 50, /Grain/Size 600, /Grain/SizeJitter 100, /Pitch/Pitch 1., /Pitch/PitchJitter 0, /Pitch/Tunning smooth, /Setup/FeedB 0., /Setup/MaxVoices 20, /Setup/Power 1, /Setup/Record 0, /Setup/Voices 15, /Bypass 0, /Gain 0., /InGain 0., /Off 1, /Wet 100.,
+Granul /Setup/Record 0, /Clear bang
+Granul2 /Setup/Record 0, /Clear bang
+Granul3 /Setup/Record 0, /Clear bang
+Delmulti /Clear bang
+Delmulti /Off 1
+Delmulti2 /Clear bang
+Delmulti2 /Off 1
+8chPlayer1 /Stop bang
+8chPlayer2 /Stop bang
+8chPlayer3 /Stop bang
+StPlayer /Stop bang
+
+// ****************
+cue StopFiles
+8chPlayer1 /Stop bang
+8chPlayer2 /Stop bang
+8chPlayer3 /Stop bang
+StPlayer /Stop bang
+
+// ****************

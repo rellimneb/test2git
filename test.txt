@@ -1,0 +1,33 @@
+// comments can be helpfull
+
+//\/\/\/\/\/\/\/\/
+cue mycue1 init
+//::\\//::\\//::\\
+
+mysend_1 we will start soon
+mysend_2 123456
+mysend_3 lsd 66
+
+///////////////
+cue mycue2
+//////////////\\\\\\\\\
+900 mysend_1 Saurkraut!
+mysend_3 :)
+
+cue another cue !!
+mysend_1 Ice_creaM
+mysend_2 34
+mysend_3 tata 39 ,tonton 40
+
+//+|+|+|+|+|+|+|+|+|+|+|
+cue a last one for fun
+// >–_–_–_–_–_–_–_–_—--–>
+
+mysend_1 4044 coockies
+mysend_2 3000
+mysend_3 tata 40 , tonton 41
+// these next 2 lines are delayed
+1000 mysend_3 tata 41 , tonton 42
+2000 mysend_3 tata 43 , tonton 44
+
+// this is the end, my friend
